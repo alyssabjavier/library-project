@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="form">
+            <h2>Check out a book</h2>
+            <div class="item">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="1984">
+            </div>
+            <div class="item">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" value="George Orwell">
+            </div>
+            <div class="item">
+                <label for="pages">Page count:</label>
+                <input type="tel" id="pages" name="pages" value="389">
+            </div>
+            <select id="status" name="Status" >
+                <option value="unread" selected>Unread</option>
+                <option value="read">Read</option>
+            </select>
+            <button class="add-btn">
+                Check out!
+            </button>
+        </div>
+
+        <div class="library">
+            <h1 id="libraryname">LIBRARY</h1>
+            <div class="container"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

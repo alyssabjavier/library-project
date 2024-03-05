@@ -1,0 +1,67 @@
+.dm-serif display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: minmax(100vh, 1fr);
+  font-family: "Courier Prime", monospace;
+}
+
+.form {
+  background-color: rgb(87, 68, 43);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.library {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  background-color: rgb(210, 205, 199);
+  padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px)); /* Example grid setup */
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Example gap between grid items */
+  }
+
+  .library h1 {
+    justify-self: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 38px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: repeating-linear-gradient(
+      #fff1e1,
+      #fcf4eb 18px,
+      #79879f 20px,
+      #79879f 10px);
+    height: 175px;
+    line-height: 20px;
+  }
