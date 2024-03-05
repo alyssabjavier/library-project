@@ -9,11 +9,20 @@ getUsername();
 
 const myLibrary = [];
 
-function Book(title, author, pages, status) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.status = status;
+// function Book(title, author, pages, status) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.status = status;
+// }
+
+class Book {
+  constructor(title, author, pages, status) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.status = status;
+  }
 }
 
 function addBookToLibrary(book) {
@@ -39,7 +48,7 @@ function createBookCard(book, index) {
   bookAuthor.textContent = `AUTHOR: ${book.author}`;
 
   const bookPages = document.createElement('div');
-  bookPages.textContent = `Pages: ${book.pages}`;
+  bookPages.textContent = `PAGES: ${book.pages}`;
 
   card.appendChild(bookTitle);
   card.appendChild(bookAuthor);
