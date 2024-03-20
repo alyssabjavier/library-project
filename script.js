@@ -58,7 +58,7 @@ function createBookCard(book, index) {
   const readBtn = document.createElement('div');
 
   const btnLabel = document.createElement('label');
-  btnLabel.textContent = 'Read';
+  btnLabel.textContent = 'READ';
 
   const toggleBtn = document.createElement("input");
   toggleBtn.setAttribute("type", "checkbox");
