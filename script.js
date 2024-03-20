@@ -109,12 +109,25 @@ displayLibrary(myLibrary);
 //BUTTON EVENT
 const addBtn = document.querySelector(".add-btn");
 addBtn.addEventListener('click', (event) => {
+  event.preventDefault();
   const formTitle = document.querySelector("#title").value;
   const formAuthor = document.querySelector("#author").value;
   const formPages = document.querySelector("#pages").value;
   const formStatus = document.querySelector("#status").value;
+
+  if (formTitle === '' || formAuthor === '' || formPages === '') {
+    alert('All fields are required!')
+  } else {
   const newBook = new Book(formTitle, formAuthor, formPages, formStatus);
   addBookToLibrary(newBook);
   displayLibrary(myLibrary);
-  console.log(myLibrary);
+}
  });
+
+  // titleInput.addEventListener("input", (event) => {
+  //  if (titleInput.validity.valueMissing) {
+  //    titleInput.setCustomValidity("Every book has a title!")
+  //  } else {
+  //    titleInput.setCustomValidity("");
+  //  }
+  // })

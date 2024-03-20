@@ -12,11 +12,11 @@
 <body>
     <div class="main">
 
-        <div class="form">
+        <form class="form">
             <h2>Check out a book</h2>
             <div class="item">
                 <label for="title">Title:</label>
-                <input type="text" id="title" name="title">
+                <input type="text" id="title" name="title" required />
             </div>
             <div class="item">
                 <label for="author">Author:</label>
@@ -30,17 +30,15 @@
                 <option value="unread">Unread</option>
                 <option value="read">Read</option>
             </select>
-            <button class="add-btn">
+            <button type="submit" class="add-btn">
                 Check out!
             </button>
-        </div>
+        </form>
 
         <div class="library">
             <h1 id="libraryname">LIBRARY</h1>
             <div class="container"></div>
         </div>
-
-    </div>
 
     <script src="script.js"></script>
 </body>
